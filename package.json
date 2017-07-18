@@ -1,0 +1,19 @@
+{
+  "name": "vera",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+  "start": "gitbook serve ./content ./gh-pages",
+  "build": "gitbook build ./content ./gh-pages",
+  "deploy": "node ./scripts/deploy-gh-pages.js",
+  "publish": "npm run build && npm run deploy",
+  "port": "lsof -i :35729"
+  }
+}
+
